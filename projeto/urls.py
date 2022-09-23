@@ -15,7 +15,30 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+# HTTP Request <- HTTP Response
+
+# A função tem que receber um (request)
+# E retornar uma HTTP Reponse
+
+
+def home(request):
+    # Return HTTP Response
+    return HttpResponse("Página Inicial")
+
+
+def sobre(request):
+    return HttpResponse("Sobre")
+
+
+def contato(request):
+    return HttpResponse("Contato")
+
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("admin/", admin.site.urls),  # Admin Dashboard
+    path("", home),  # Página Inicial
+    path("sobre/", sobre),  # Sobre
+    path("contato/", contato)  # Contato
 ]
