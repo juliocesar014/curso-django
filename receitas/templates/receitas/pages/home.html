@@ -2,19 +2,18 @@
 
 
 
-<body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a href="/">
-                    <i class="fa-solid fa-cake-candles"></i>
-                    <span>Receitas.com</span> 
-                </a>
-            </h1>
-        </div>
-        
+<body>    
 
-    </header>
+    {% include "receitas/partials/header.html" %}
+
+    {% include "receitas/partials/search.html" %}
     
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+            {% include "receitas/partials/receita.html" %}
+            
+        </div>
+    </main>
+
 </body>
 </html>
