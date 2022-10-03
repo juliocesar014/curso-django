@@ -1,5 +1,12 @@
-{% include 'receitas/partials/head.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
+<head>    
+    
+    {% include 'receitas/partials/head.html' %}
+    <title>{% block title %}Home / {% endblock title %}Receitas</title>
+</head>
 
 
 <body>    
