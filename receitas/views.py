@@ -11,3 +11,7 @@ def home(request):
         'idade': '20',
 
     })
+
+
+def receita(request, id):
+    return render(request, 'receitas/pages/home.html')
