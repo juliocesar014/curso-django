@@ -14,4 +14,4 @@ def home(request):
 
 
 def receita(request, id):
-    return render(request, 'receitas/pages/home.html')
+    return render(request, 'receitas/pages/receita-view.html')

@@ -190,6 +190,20 @@ span {
     box-shadow: -8px -8px 18px rgba(0, 0, 0, .35);
 }
 
+.main-content-detail .receitas-list-item {
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.main-content-detail .receitas-list-item:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+}
+
+
+
+
+
 .receitas-title-container {
     padding: var(--spacing-gutter-medium);
     padding: bottom 2rem;
@@ -263,6 +277,8 @@ span {
     filter: brightness(2);
 }
 
+
+
 .main-footer {
     display: flex;
     align-items: center;
@@ -281,5 +297,7 @@ span {
 .main-footer a:hover {
     filter: brightness(.8);
 }
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200&display=swap');
