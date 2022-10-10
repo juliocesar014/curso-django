@@ -3,17 +3,18 @@
         <img src="https://via.placeholder.com/1280x760.png/269fe6" alt="Temp">
     </div>
     <div class="receitas-title-container">
-        <h2 class="receitas-title">Lorem ipsum dolor sit a</h2>
+        <h2 class="receitas-title">{{receita.title}}</h2>
     </div>
 
     <div class="receitas-autor">
         <span class="receitas-autor-item">
             <i class="fas fa-user"></i>
-            Otávio Miranda
+            {{receita.author.first_name}} {{receita.author.last_name}}
         </span>
         <span class="receitas-autor-item">
             <i class="fas fa-calendar-alt"></i>
-            16/10/2021 às 11:21</span>
+            {{ receita.created_at|date:"d/m/Y" }} às {{ receita.created_at|date:"H:i" }}
+        </span>
         <span class="receitas-autor-item">
             <a href="/receitas/category/cafe-da-manha/">
                 <i class="fas fa-layer-group"></i>
