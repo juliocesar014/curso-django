@@ -18,26 +18,26 @@
         <span class="receitas-autor-item">
             <a href="/receitas/category/cafe-da-manha/">
                 <i class="fas fa-layer-group"></i>
-                <span>Café da manhã</span>
+                <span>{{receita.category.name}}</span>
             </a>
         </span>
     </div>
 
     <div class="receitas-content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ab ratione maxime modi nihil voluptates fugiat quasi alias animi sunt. Atque nesciunt at laudantium possimus ratione aspernatur ipsum labore ex.</p>
+        <p>{{receita.description}}</p>
     </div>
 
     <div class="receitas-meta-container">
         <div class="receitas-meta recipe-preparation">
             <h3 class="receitas-meta-title"><i class="fas fa-stopwatch"></i> Preparo</h3>
             <div class="receitas-meta-text">
-                0 Minutos
+                {{receita.preparation_time}} {{receita.preparation_time_unit}}
             </div>
         </div>
         <div class="receitas-meta receitas-servings">
             <h3 class="receitas-meta-title"><i class="fas fa-pizza-slice"></i> Porções</h3>
             <div class="receitas-meta-text">
-                0 Porções
+                {{receita.servings}} {{receita.servings_unit}}
             </div>
         </div>
     </div>
@@ -50,6 +50,5 @@
         </a>
     </footer>
 
-    
-</div>
 
+</div>
