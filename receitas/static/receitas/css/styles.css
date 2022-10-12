@@ -179,10 +179,12 @@ span {
 .receitas img {
     max-width: 100%;
 
+
 }
 
 .receitas-list-item {
     max-width: 64rem;
+    height: max-content;
 }
 
 .receitas-list-item:hover {
@@ -193,6 +195,7 @@ span {
 .main-content-detail .receitas-list-item {
     max-width: 84rem;
     margin: 0 auto;
+
 }
 
 .main-content-detail .receitas-list-item:hover {
